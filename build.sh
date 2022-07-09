@@ -5,4 +5,4 @@ timestamp() {
   date +%F_%T  # current time
 }
 
-sed 's/##replace-text##/'$(uuidgen)-$(timestamp)'/g' ./template/index.html > ./html/index.html
+sed 's/##replace-text##/'$(timestamp)'/g' ./template/index.html > ./html/index.html
